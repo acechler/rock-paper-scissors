@@ -4,4 +4,4 @@ import {Game} from './game';
 const game = new Game();
 game.displayOptions();
 console.log('\n');
-game.playRound(1);
+console.log(game.playRound( Math.floor(Math.random() * 3)));
