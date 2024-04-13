@@ -3,4 +3,4 @@ import {Game} from './game';
 
 const game = new Game();
 game.displayOptions();
-console.log(game.playRound(1));
+game.playRound(1);

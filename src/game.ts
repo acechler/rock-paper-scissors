@@ -19,14 +19,11 @@ export class Game{
         })
     }
 
-    playRound(userChoice: number): string {
+    playRound(userChoice: number): void {
         
         const enemyChoice = Math.floor(Math.random() * this.options.length);
         console.log(`Enemy: ${this.options.at(enemyChoice)}`);
         console.log(`You: ${this.options.at(userChoice)}`);
-        
-
-        return this.options.at(enemyChoice);
     }
 
 
