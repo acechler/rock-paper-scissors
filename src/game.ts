@@ -24,6 +24,9 @@ export class Game{
         const enemyChoice = Math.floor(Math.random() * this.options.length);
         console.log(`Enemy: ${this.options.at(enemyChoice)}`);
         console.log(`You: ${this.options.at(userChoice)}`);
+
+        
+
     }
 
 
