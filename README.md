@@ -18,7 +18,10 @@ npm install
 npm run build
 
 # Run the development server
-npm start
+npm start:dev
+
+# Run TypeScript
+npm start:ts
 ```
 
 Features
