@@ -25,7 +25,7 @@ export class Game{
     }
 
     playRound(userChoice: number): string {
-        userChoice-=1; // allows choice to work with array.
+        userChoice-=1; 
         const enemyChoice = Math.floor(Math.random() * this.options.length);
         console.log(`Enemy: ${this.options.at(enemyChoice)}`);
         console.log(`You: ${this.options.at(userChoice)}`);
