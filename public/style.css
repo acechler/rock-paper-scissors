@@ -1,62 +1,56 @@
-/* Apply general margin and padding reset to all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Style the html and body to take full height of the viewport and center content */
+
   html, body {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Arial', sans-serif; /* or your chosen font-family */
-    background-color: #f5f5f5; /* background color of the body */
+    font-family: 'Arial', sans-serif; 
+    background-color: #f5f5f5; 
   }
   
-  /* Style the main game container */
   .container {
     text-align: center;
-    background-color: #fff; /* background color of the container */
+    background-color: #fff; 
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Style for instruction text and result output */
+
   .instructions, .result {
     margin-bottom: 1rem;
     font-size: 1rem;
-    color: #333; /* text color */
+    color: #333; 
   }
   
-/* Rest of your CSS */
-
-/* Styles for the game options buttons */
 button {
-    padding: 0.75rem 1.5rem; /* Increased padding for a larger button */
+    padding: 0.75rem 1.5rem; 
     margin: 0.5rem;
-    border: none; /* Remove border for a flat design, or adjust as needed */
+    border: none; 
     border-radius: 20px;
-    background-color: #e0e0e0; /* Button background color */
+    background-color: #e0e0e0; 
     cursor: pointer;
-    font-size: 1rem; /* Set a consistent font size */
+    font-size: 1rem; 
     transition: background-color 0.3s ease;
-    display: inline-block; /* Ensures that the padding and margin are respected */
-    min-width: 100px; /* Ensures all buttons have at least this width */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
+    display: inline-block; 
+    min-width: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   }
   
-  /* Hover state for buttons */
   button:hover {
-    background-color: #d0d0d0; /* Darker shade on hover */
+    background-color: #d0d0d0; 
   }
   
-  /* Output display styles */
+
   .output {
     font-style: italic;
-    color: #888; /* text color for output */
+    color: #888; 
     margin-bottom: 1rem;
   }
   
