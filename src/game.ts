@@ -19,15 +19,12 @@ export class Game{
         })
     }
 
-    playRound(userChoice: string): string {
+    playRound(userChoice: number): string {
         
         const enemyChoice = Math.floor(Math.random() * this.options.length);
-        console.log(`Enemy: ${enemyChoice}`);
-        console.log(`You: ${userChoice}`);
+        console.log(`Enemy: ${this.options.at(enemyChoice)}`);
+        console.log(`You: ${this.options.at(userChoice)}`);
         
-        if(this.options[enemyChoice] === 'Rock' && userChoice === 'Rock' || 'rock'){
-            
-        }
 
         return this.options.at(enemyChoice);
     }
