@@ -24,10 +24,18 @@ npm start:dev
 npm start:ts
 ```
 
-Features
-This boilerplate includes several key features:
 
-TypeScript: Provides strong typing to enhance JavaScript code reliability and maintainability.
-Webpack: Helps in bundling assets, scripts, and stylesheets with support for various loaders.
-Jest: Facilitates testing with a powerful and flexible testing framework.
-Development Server: Includes live reloading for real-time feedback during development.
+# Project Technologies
+
+## Frontend Technologies
+
+- **TypeScript**: A typed superset of JavaScript, which provides type safety at compile time.
+- **Webpack**: Used to bundle TypeScript files and other assets. This is for building scalable applications.
+- **Webpack Dev Server**: Provides a simple web server and the ability to use live reloading.
+- **HTML Webpack Plugin**: This plugin simplifies the creation of HTML files to serve the webpack bundles.
+- **Jest and ts-jest**: For testing JavaScript and TypeScript code.
+
+## Backend Technologies
+
+- **ts-node**: This runs TypeScript code directly without pre-compiling. 
+- **Node.js**: Used through ts-node and webpack-dev-server.
