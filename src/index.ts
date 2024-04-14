@@ -11,27 +11,19 @@ const displayWinnerDiv = document.querySelector(".display-winner") as HTMLDivEle
 const game = new Game();
 
 
-if (rockBtn) {
-  rockBtn.addEventListener("click", () => {
-    game.playRound(1);
-    playerResultDiv.textContent = `You Picked: ${game.getUserResult()}`;
-    enemyResultDiv.textContent = `Enemy Picked: ${game.getEnemyResult()}`;
-    displayWinnerDiv.textContent = game.getWinner();
-  });
+
+
+function setupButton(button: HTMLButtonElement, choice: number) {
+  if (button) {
+    button.addEventListener("click", () => {
+      game.playRound(choice);
+      playerResultDiv.textContent = `You Picked: ${game.getUserResult()}`;
+      enemyResultDiv.textContent = `Enemy Picked: ${game.getEnemyResult()}`;
+      displayWinnerDiv.textContent = game.getWinner();
+    });
+  }
 }
-if (paperBtn) {
-  paperBtn.addEventListener("click", () => {
-    game.playRound(2);
-    playerResultDiv.textContent = `You Picked: ${game.getUserResult()}`;
-    enemyResultDiv.textContent = `Enemy Picked: ${game.getEnemyResult()}`;
-    displayWinnerDiv.textContent = game.getWinner();
-  });
-}
-if (scissorsBtn) {
-  scissorsBtn.addEventListener("click", () => {
-    game.playRound(3);
-    playerResultDiv.textContent = `You Picked: ${game.getUserResult()}`;
-    enemyResultDiv.textContent = `Enemy Picked: ${game.getEnemyResult()}`;
-    displayWinnerDiv.textContent = game.getWinner();
-  });
-}
+
+setupButton(rockBtn, 1);      
+setupButton(paperBtn, 2);     
+setupButton(scissorsBtn, 3);  
