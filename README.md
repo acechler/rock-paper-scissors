@@ -9,7 +9,7 @@ To get started with this boilerplate, follow the steps below to setup the projec
 ```bash
 # Clone the repository
 git clone https://your-repository-url.git
-cd typescript-boilerplate
+cd rock-paper-scissors
 
 # Install dependencies
 npm install
